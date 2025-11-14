@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invitation Editor</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+  <div class="toolbar">
+    <button id="addText"><span>&#x2795;</span> Add Text</button>
+    <select id="fontFamily">
+      <option value="serif">Serif</option>
+      <option value="sans-serif">Sans Serif</option>
+      <option value="cursive">Cursive</option>
+      <option value="monospace">Monospace</option>
+    </select>
+    <input type="number" id="fontSize" placeholder="Font Size" min="10" max="60" />
+    <input type="color" id="fontColor" title="Text Color" />
+    <button id="deleteText"><span>&#x1F5D1;</span> Delete Text</button>
+  </div>
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="slide-content">
+          <img src="slide1.jpg" alt="Slide 1" />
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-content">
+          <img src="slide2.jpg" alt="Slide 2" />
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-content">
+          <img src="slide3.jpg" alt="Slide 3" />
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
